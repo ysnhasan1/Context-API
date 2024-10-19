@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    transition: 0.4s linear;
+}
+
+.light {
+    transition: 0.4s linear;
+}
