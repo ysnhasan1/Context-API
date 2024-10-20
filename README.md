@@ -1,9 +1,9 @@
 # State Management with Context API
-Context API is React's solution for managing global state. It allows you to share data throughout the component tree without having to pass props through multiple levels (avoiding "prop drilling"). <br><br>
+**Context API** is React's solution for managing global state. It allows you to share data throughout the component tree without having to pass props through multiple levels (avoiding "prop drilling"). <br><br>
 
 ## Features
-- Global State Management: Manages data that needs to be accessible across different parts of the application.
-- Solves Prop Drilling: You can pass data directly to components without sending it through intermediate ones. <br><br>
+- **Global State Management**: Manages data that needs to be accessible across different parts of the application.
+- **Solves Prop Drilling**: You can pass data directly to components without sending it through intermediate ones. <br><br>
 
 ## Avoiding to Prop Drilling
 <img src="https://github.com/user-attachments/assets/a3dad527-fb2a-4b75-b796-c3c008b2acbc"> <br><br>
@@ -94,9 +94,15 @@ import ThemeContext from '../contexts/ThemeContext'
 ```bash
 const theme = useContext(ThemeContext)
 ```
+
+```bash
+<div>
+    {theme}
+</div>
+```
 <br>
 
-## After completing these steps, your final codes should be as follows.
+## After completing these steps, your final codes should be as follows
 
 `App.jsx`:
 ```bash
@@ -140,14 +146,14 @@ const ThemeContext = createContext()
 
 export default ThemeContext
 ```
-<br><br>
+<br>
 
-## Expected Result
+## Result
 When you open your browser, you will see that you can access `theme`.
 
 <img src="https://github.com/user-attachments/assets/e7284b47-e76e-46ad-8c9f-531bb099a1e3"> <br><br>
 
-Note: These steps are for implementing the Context API in the simplest way. I created a more complex application that includes the use of multiple context and other features. Feel free to ask me any questions! <br><br>
+**Note**: These steps are for implementing the Context API in the simplest way. I created a more complex application that includes the use of multiple context and other features. Feel free to ask me any questions! <br><br>
 
 ## Application Dependencies
 To install packages, run the command `npm install`. <br> 
