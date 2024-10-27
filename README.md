@@ -9,11 +9,11 @@
 <img src="https://github.com/user-attachments/assets/a3dad527-fb2a-4b75-b796-c3c008b2acbc"> <br><br>
 
 ## How to Use Context API
-- Create a folder named `contexts` under the src directory and create a file called `ThemeContext.js` inside it.
+Create a folder named `contexts` under the src directory and create a file called `ThemeContext.js` inside it.
 
 <img src="https://github.com/user-attachments/assets/d2bdcd77-99db-4b24-aad9-6cef32210938"> <br><br>
 
-- Then create a context using `createContext` and export it.
+Then create a context using `createContext` and export it.
 ```bash 
 import { createContext } from "react"
 
@@ -23,7 +23,7 @@ export default ThemeContext
 ```
 <br>
 
-- Copy the following code snippet and paste it into your `App.jsx` file.
+Copy the following code snippet and paste it into your `App.jsx` file.
 ```bash 
 const App = () => {
   return (
@@ -37,13 +37,13 @@ export default App
 ```
 <br>
 
-- Import the context you created into the `App` component.
+Import the context you created into the `App` component.
 ```bash 
 import ThemeContext from './contexts/ThemeContext'
 ```
 <br>
 
-- Wrap with Provider and then use the Provider component to pass the data.
+Wrap with Provider and then use the Provider component to pass the data.
 ```bash 
 <ThemeContext.Provider value="light">
   App
@@ -53,11 +53,11 @@ import ThemeContext from './contexts/ThemeContext'
 
 Now, you can access this value in any component used within the Provider.
 
-- Create a folder named `components` under the src directory and create a file called `ChangeTheme.jsx` inside it.
+Create a folder named `components` under the src directory and create a file called `ChangeTheme.jsx` inside it.
   
 <img src="https://github.com/user-attachments/assets/aece06c6-7c7d-4ea4-8176-8a163247103c"> <br><br>
 
-- Then copy the following code snippet and paste it into your `ChangeTheme.jsx` file.
+Then copy the following code snippet and paste it into your `ChangeTheme.jsx` file.
 ```bash 
 const ChangeTheme = () => {
     return (
@@ -71,7 +71,7 @@ export default ChangeTheme
 ```
 <br>
 
-- Import the component you created into the `App` component. Then use it within the Provider.
+Import the component you created into the `App` component. Then use it within the Provider.
 ```bash 
 import ChangeTheme from './components/ChangeTheme'
 ```
@@ -85,7 +85,7 @@ import ChangeTheme from './components/ChangeTheme'
 
 Now, you can access this value within the `ChangeTheme` component using `useContext` Hook.
 
-- Import `useContext` and `ThemeContext` in the `ChangeTheme` component and use them together. Then display the value within the `ChangeTheme` component.
+Import `useContext` and `ThemeContext` in the `ChangeTheme` component and use them together. Then display the value within the `ChangeTheme` component.
 ```bash
 import { useContext } from 'react'
 import ThemeContext from '../contexts/ThemeContext'
